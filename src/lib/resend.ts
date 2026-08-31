@@ -1,7 +1,7 @@
 import { Resend } from 'resend';
 
 const resendApiKey = process.env.RESEND_API_KEY || '';
-const fromEmail = process.env.RESEND_FROM_EMAIL || 'Varyz Access <access@varyz.io>';
+const fromEmail = process.env.RESEND_FROM_EMAIL || 'Varys Access <access@varys.io>';
 
 const resend = resendApiKey ? new Resend(resendApiKey) : null;
 
@@ -14,7 +14,7 @@ export async function sendPrototypeAccessEmail({
   firstName: string;
   prototypeUrl: string;
 }): Promise<{ success: boolean; id?: string; simulated?: boolean }> {
-  const subject = 'Your Varyz prototype access is ready';
+  const subject = 'Your Varys prototype access is ready';
 
   const htmlContent = `
 <!DOCTYPE html>
@@ -29,28 +29,28 @@ export async function sendPrototypeAccessEmail({
     
     <!-- Logo Header -->
     <div style="margin-bottom: 30px; text-align: left;">
-      <span style="font-size: 24px; font-weight: 800; color: #8CCB45; letter-spacing: -0.5px;">VARYZ</span>
+      <span style="font-size: 24px; font-weight: 800; color: #8CCB45; letter-spacing: -0.5px;">VARYS</span>
       <span style="display: block; font-size: 11px; color: #A5E35A; text-transform: uppercase; tracking: 1px;">Geo-Security & Agri-Intelligence</span>
     </div>
 
     <!-- Main Message -->
     <p style="font-size: 16px; line-height: 1.6; color: #F5F7F1;">Hi ${firstName},</p>
     
-    <p style="font-size: 16px; line-height: 1.6; color: #F5F7F1;">Thank you for your interest in Varyz.</p>
+    <p style="font-size: 16px; line-height: 1.6; color: #F5F7F1;">Thank you for your interest in Varys.</p>
     
     <p style="font-size: 16px; line-height: 1.6; color: #F5F7F1;">Your prototype access is ready. Use the button below to explore the drone operations, agriculture, security and client workspaces.</p>
 
     <!-- Call to Action Button -->
     <div style="margin: 35px 0; text-align: center;">
-      <a href="${prototypeUrl}" style="background-color: #8CCB45; color: #06162C; font-weight: 700; font-size: 16px; text-decoration: none; padding: 14px 32px; border-radius: 8px; display: inline-block; box-shadow: 0 4px 14px rgba(140, 203, 69, 0.4);">Open Varyz Prototype</a>
+      <a href="${prototypeUrl}" style="background-color: #8CCB45; color: #06162C; font-weight: 700; font-size: 16px; text-decoration: none; padding: 14px 32px; border-radius: 8px; display: inline-block; box-shadow: 0 4px 14px rgba(140, 203, 69, 0.4);">Open Varys Prototype</a>
     </div>
 
-    <p style="font-size: 16px; line-height: 1.6; color: #F5F7F1;">As you explore the platform, please note anything you find useful, unclear or missing. Your feedback will help us improve Varyz.</p>
+    <p style="font-size: 16px; line-height: 1.6; color: #F5F7F1;">As you explore the platform, please note anything you find useful, unclear or missing. Your feedback will help us improve Varys.</p>
 
     <!-- Sign off -->
     <p style="font-size: 16px; line-height: 1.6; color: #F5F7F1; margin-top: 30px;">
       Thank you,<br>
-      <strong>The Varyz Team</strong>
+      <strong>The Varys Team</strong>
     </p>
 
     <hr style="border: none; border-top: 1px solid rgba(255, 255, 255, 0.1); margin: 30px 0;" />
@@ -68,17 +68,17 @@ export async function sendPrototypeAccessEmail({
   const textContent = `
 Hi ${firstName},
 
-Thank you for your interest in Varyz.
+Thank you for your interest in Varys.
 
 Your prototype access is ready. Use the button below to explore the drone operations, agriculture, security and client workspaces.
 
-Open Varyz Prototype:
+Open Varys Prototype:
 ${prototypeUrl}
 
-As you explore the platform, please note anything you find useful, unclear or missing. Your feedback will help us improve Varyz.
+As you explore the platform, please note anything you find useful, unclear or missing. Your feedback will help us improve Varys.
 
 Thank you,
-The Varyz Team
+The Varys Team
   `;
 
   if (resend) {

@@ -1,6 +1,6 @@
-# Varyz - Geo-Security & Agricultural Intelligence Platform
+# Varys - Geo-Security & Agricultural Intelligence Platform
 
-Varyz is an enterprise drone intelligence and operational management platform that turns aerial information into clear, actionable decisions. It connects drone mission planning, active flight telemetry, agricultural intelligence (NDVI vegetation analysis, soil moisture, planting suitability), security surveillance, incident monitoring, and client project reporting in one clear platform.
+Varys is an enterprise drone intelligence and operational management platform that turns aerial information into clear, actionable decisions. It connects drone mission planning, active flight telemetry, agricultural intelligence (NDVI vegetation analysis, soil moisture, planting suitability), security surveillance, incident monitoring, and client project reporting in one clear platform.
 
 ---
 
