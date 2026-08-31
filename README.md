@@ -135,3 +135,4 @@ npm run build
 - **Lightbox Navigation**: Click any screen thumbnail -> test `←` and `→` keyboard arrows, zoom, and `Esc` key.
 - **Feedback Submission**: Click "Submit Feedback" inside prototype -> fill 1-5 rating, workspace, useful features -> verify submission success.
 - **Expired Token Test**: Navigate to `/prototype?token=invalid-123` -> verify expired token card and re-request CTA.
+
